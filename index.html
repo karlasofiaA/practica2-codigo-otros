@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Renombramos el documento .html  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <h1>Bienvenidos a mi fiesta</h1>
+  <h2>Por favor, confirmar asistencia:</h2>
+
+  <form class="formulario" id="form"> <!-- Agregar la referencia por ID de .js -->
+    <label for="name"> Nombre </label> <!--   Enlazar el input mediante la etiqueta label -->
+    <input type="text" name="name" id="name"> 
+    <br />
+    <label for="age"> Edad </label> <!--   Enlazar el input mediante la etiqueta label -->
+    <input type="number" name="age" id="age">
+    <br />
+
+    <label for="nationality"> Nacionalidad </label> <!-- Nacionalidad dentro de la etiqueta label -->
+    <select name="nationality" id="nationality">
+      <!-- Renombrar las variables por algo más específico -->
+      <option value="argentina">Argentina</option>
+      <option value="mexico">Mexicana</option>
+      <option value="peru">Peruana</option>
+      <option value="venezuela">Venezolana</option>
+    </select>
+    <br />
+    <input type="submit" onclick= agregarInvitado()
+      >
+  </form>
+
+  <div id="lista-de-invitados">
+    <h2>Lista de invitados</h2>
+
+  </div>
+
+  <!-- No está bien enlazado el documento js -->
+  <script src="formulario.js"></script> 
+</body>
+
+</html>
